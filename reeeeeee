@@ -1,0 +1,23 @@
+import math
+while True:
+    x=str(input("Enter an integer or a decimal.(i/d): "))
+    if ord(x)==105:
+        n = int(input("Enter n (integer): "))
+        for i in range(1,n):
+            n = n*i
+        print('The factorial of n is ',n,'.00.')
+        pass
+    elif ord(x)==100:
+        n=float(input("Enter n (decimal): "))
+        n=math.gamma(n)
+        m=int(input("Enter 1 – 15 (rounding the decimal): "))
+        n = round(n,m)
+        print("The gamma function of n is ",n,".")
+        pass
+    else:
+        pass
+    m = str(input("Do you want to continue?(C)"))
+    if ord(m) == 67:
+        pass
+    else:
+        break
